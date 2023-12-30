@@ -18,7 +18,7 @@ Thanks for checking out this front-end coding challenge.
 Your challenge is to integrate with the [REST Countries API](https://restcountries.eu) to pull country data and display it like in the designs.
 
 You can use any JavaScript framework/library on the front-end such as [React](https://reactjs.org) or [Vue](https://vuejs.org). You also have complete control over which packages you use to do things like make HTTP requests or style your project.
-
+ 
 Your users should be able to:
 
 - See all countries from the API on the homepage
@@ -58,7 +58,7 @@ Also, you could try building this project in a team. This is a great way to prac
 
 Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/manueldinisjunior/REST-Countries-API/). This will make it easier to share your code with the community if you need some help. If you're not sure how to do this, [have a read through of this Try Git resource](https://try.github.io/).
+1. Initialize your project as a public repository on [GitHub](https://github.com/manueldinisjunior/REST-API-Countries). This will make it easier to share your code with the community if you need some help. If you're not sure how to do this, [have a read through of this Try Git resource](https://try.github.io/).
 2. Configure your repository to publish your code to [GitHub Pages](https://pages.github.com) or [Netlify](https://www.netlify.com).
 3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes that you could create to make reusable styles.
 4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
