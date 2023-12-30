@@ -46,6 +46,6 @@ Users should be able to:
 
 ## Author
 
-- [Web-Portfólio](manueldinisjunior.com)
+- [Web-Portfolio](https://manueldinisjunior.com)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/manueldinisjunir)
 - [Twitter](https://www.twitter.com/manueldinisjr)
