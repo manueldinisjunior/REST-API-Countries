@@ -27,10 +27,7 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 - Bonus: Toggle the color scheme between light and dark mode
 
-
-### Screenshot
-
-![Countries](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mozambique_in_the_world_%28W3%29.svg/800px-Mozambique_in_the_world_%28W3%29.svg.png?20110504134824)
+![Countries](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mozambique_in_the_world_%28W3%29.svg/1280px-Mozambique_in_the_world_%28W3%29.svg.png?20110504134824)
 
 ### Links
 
