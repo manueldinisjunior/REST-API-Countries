@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Countries](https://cdn.firstcry.com/education/2022/11/30100511/Countries-And-Their-Capitals-For-Kids.jpg)
+![Countries](https://upload.wikimedia.org/wikipedia/commons/9/9e/Mozambique_in_the_world_%28W3%29.svg)
 
 ### Links
 
