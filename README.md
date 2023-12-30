@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Countries](./idea/countries.jpg)
+![Countries](https://cdn.firstcry.com/education/2022/11/30100511/Countries-And-Their-Capitals-For-Kids.jpg)
 
 ### Links
 
