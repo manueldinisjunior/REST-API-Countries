@@ -1,0 +1,60 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--lbg);
+  box-shadow: var(--box-shadow);
+  z-index: 2;
+}
+
+.header {
+  padding: 2em var(--padd-x);
+  margin: 0 auto;
+  width: 100%;
+  max-width: 102rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+.theme:hover {
+  background-color: var(--lm-input);
+}
+
+.theme span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.moon {
+  width: var(--icon-w);
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .theme span {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .theme span {
+    display: none;
+  }
+}

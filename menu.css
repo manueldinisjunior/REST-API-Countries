@@ -1,0 +1,103 @@
+.menu {
+  padding: 2em 0;
+  margin: 6.77rem auto 0;
+  width: 100%;
+  max-width: 102rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.search-bar {
+  width: min(35rem, 100%);
+  padding: 1.5em 2em;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: var(--lbg);
+  gap: 1em;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--br);
+}
+
+.search-icon {
+  width: var(--icon-w);
+}
+
+.search {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  color: var(--text);
+  background-color: var(--lbg);
+}
+
+.filter {
+  position: relative;
+  width: min(25rem, 100%);
+}
+
+.selector {
+  padding: 1.5em 2em;
+  background-color: var(--lbg);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--br);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.selector span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.triangle {
+  border-top: 0.5rem solid var(--text);
+  border-right: 0.5rem solid transparent;
+  border-left: 0.5rem solid transparent;
+}
+
+.options {
+  position: absolute;
+  width: 100%;
+  margin-top: 1em;
+  border-radius: var(--br);
+  overflow: hidden;
+  display: none;
+  box-shadow: var(--box-shadow);
+}
+
+.options-opened {
+  display: block;
+}
+
+.region {
+  font-size: 1.2rem;
+  padding: 0.8em;
+  background-color: var(--lbg);
+}
+
+.region:hover {
+  background-color: var(--bg);
+}
+
+@media screen and (max-width: 741px) {
+  .search-bar {
+    width: min(25rem, 100%);
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .search-bar, .filter {
+    width: 100%;
+  }
+}

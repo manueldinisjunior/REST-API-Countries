@@ -1,43 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="image" property="og:image" content="https://github.com/SyedZawwarAhmed/Rest-Countries-API/raw/main/screenshot.png">
+    <meta name="author" content="Syed Zawwar Ahmed">
+    <meta name="description" property="og:description" content="A single-page application that displays information about all the countries of the world by integrating with a REST API.">
+    <title>Countries of The World</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="country-page.css" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <header>
+      <div class="header">
+        <h3 class="title">Where in the world?</h3>
+        <div id="theme" class="theme">
+          <img id="moon" class="moon" src="icons/moon-solid.svg" alt="" />
+          <span>Dark Mode</span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="home" class="home">
+        <div id="menu" class="menu">
+          <div id="search-bar" class="search-bar">
+            <img
+              id="search-icon"
+              class="search-icon"
+              src="icons/search-solid.svg"
+              alt=""
+            />
+            <input
+              id="search"
+              class="search"
+              type="text"
+              placeholder="Search for a country..."
+            />
+          </div>
+          <div id="filter" class="filter">
+            <div class="selector">
+              <span>Filter By Region</span>
+              <div class="triangle"></div>
+            </div>
+            <div class="options">
+              <div class="region" data-value="All">All</div>
+              <div class="region" data-value="Asia">Asia</div>
+              <div class="region" data-value="Africa">Africa</div>
+              <div class="region" data-value="Europe">Europe</div>
+              <div class="region" data-value="Americas">Americas</div>
+              <div class="region" data-value="Oceania">Oceania</div>
+              <div class="region" data-value="Polar">Polar</div>
+            </div>
+          </div>
+        </div>
+        <div class="loading">
+          <img
+            class="loading-icon"
+            src="icons/loadingIcon.gif"
+            alt="Loading..."
+          />
+        </div>
+        <div id="main"></div>
+      </div>
+      <div class="country-page" id="country-page">
+        <div class="country-information">
+          <div id="back-btn" class="back-btn">
+            <img id="arrow" src="icons/arrow-left-solid.svg" alt="" />
+            <span>Back</span>
+          </div>
+          <div class="main-container">
+            <img src="" alt="" id="big-flag" class="big-flag" />
+            <div class="detailed-details">
+              <h1 id="cn"></h1>
+              <div class="facts-and-figures">
+                <div class="col-1">
+                  <span class="col-1-span"></span
+                  ><span class="col-1-span"></span
+                  ><span class="col-1-span"></span
+                  ><span class="col-1-span"></span
+                  ><span class="col-1-span"></span>
+                </div>
+                <div class="col-2">
+                  <span class="col-2-span"></span
+                  ><span class="col-2-span"></span
+                  ><span class="col-2-span"></span>
+                </div>
+              </div>
+              <div id="border-countries" class="border-countries"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
+  <script src="app.js"></script>
 </html>

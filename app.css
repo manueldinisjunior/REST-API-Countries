@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+  /* Colors */
+  --dm-element: #2b3945;
+  --dm-bg: #202c37;
+  --text: #111517;
+  --input: #858585;
+  --lbg: #fafafa;
+  --bg: #ffffff;
+
+  /* Typography  */
+  font-size: 14px;
+
+  --padd-x: 5em;
+  
+  --icon-w: 1.5rem;
+  --box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+  --br: 0.5rem;
+}
+
+body {
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+  overflow-x: hidden;
+  transition: 0.4s;
+}
+
+strong {
+  font-weight: 800; 
+}
+
+@media screen and (max-width: 951px) {
+  :root {
+    --padd-x: 3em;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  :root {
+    --padd-x: 2em;
+  }
+}
