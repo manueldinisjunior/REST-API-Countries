@@ -1,5 +1,5 @@
 {
-  "name": "nations-navigator",
+  "name": "restapi-countries",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
