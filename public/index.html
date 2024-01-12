@@ -2,8 +2,14 @@
 <html lang="en">
 
 <head>
-  <!-- ... (existing head content) -->
-  <title>Rest Countries API - Manuel Dinis Júnior</title>
+  <meta charset="utf-8" />
+  <link rel="icon" href="https://icon-library.com/images/icon-website-png/icon-website-png-12.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Rest Countries API with Country Theme Switcher" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>Rest Countries API - Manuel Dinis Júnior V2</title>
 </head>
 
 <body>
@@ -19,19 +25,18 @@
     function searchCountry() {
       const searchTerm = document.getElementById('searchInput').value;
 
-      // Make API request to Rest Countries API using fetch
-      fetch(`https://restcountries.com/v3.1/name/${searchTerm}`)
+      // Make API request to Google Search Rest Countries API using fetch
+      fetch(`https://www.googleapis.com/customsearch/v1?q=${searchTerm}+rest+countries&key=YOUR_API_KEY`)
         .then(response => response.json())
         .then(data => {
           // Handle the received data, e.g., update the DOM
           const countryDetailsDiv = document.getElementById('countryDetails');
-          // Assume the API response is an array of countries
-          if (data.length > 0) {
-            const country = data[0];
+          // Assume the API response contains search results
+          if (data.items && data.items.length > 0) {
+            const country = data.items[0];
             countryDetailsDiv.innerHTML = `
-              <h2>${country.name.common}</h2>
-              <p>Capital: ${country.capital}</p>
-              <p>Population: ${country.population}</p>
+              <h2>${country.title}</h2>
+              <p>Snippet: ${country.snippet}</p>
               <!-- Add more details as needed -->
             `;
           } else {
@@ -43,7 +48,7 @@
   </script>
 
   <!-- Include your existing script tag for app.js -->
-  <script src="app.js"></script>
+  <script src="App.js"></script>
 </body>
 
 </html>
