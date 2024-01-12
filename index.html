@@ -9,17 +9,47 @@
   <meta name="description" content="Rest Countries API with Country Theme Switcher" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <title>Rest Countries API - Manuel Dinis Júnior</title>
+  <title>Rest Countries API - Manuel Dinis Júnior V2</title>
 </head>
 
 <body>
-  <div id="root" ></div>
+  <div id="root"></div>
 
-    <input type="text" id="searchInput" placeholder="Enter Country Name">
-    <button onclick="searchCountry()">Search</button>
-    <div id="countryDetails"></div>
-    <script src="app.js"></script>
-  
+  <!-- Add the following input, button, and div for country search -->
+  <input type="text" id="searchInput" placeholder="Enter Country Name">
+  <button onclick="searchCountry()">Search</button>
+  <div id="countryDetails"></div>
+
+  <script>
+    // Add the searchCountry function
+    function searchCountry() {
+      const searchTerm = document.getElementById('searchInput').value;
+
+      // Make API request to Google Search Rest Countries API using fetch
+      fetch(`https://www.googleapis.com/customsearch/v1?q=${searchTerm}+rest+countries&key=YOUR_API_KEY`)
+        .then(response => response.json())
+        .then(data => {
+          // Handle the received data, e.g., update the DOM
+          const countryDetailsDiv = document.getElementById('countryDetails');
+          // Assume the API response contains search results
+          if (data.items && data.items.length > 0) {
+            const country = data.items[0];
+            countryDetailsDiv.innerHTML = `
+              <h2>${country.title}</h2>
+              <p>Snippet: ${country.snippet}</p>
+              <!-- Add more details as needed -->
+            `;
+          } else {
+            countryDetailsDiv.innerHTML = '<p>Country not found</p>';
+          }
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    }
+  </script>
+
+  <!-- Include your existing script tag for app.js -->
+  <script src="app.js"></script>
 </body>
 
 </html>
+
