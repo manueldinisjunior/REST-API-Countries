@@ -1,0 +1,156 @@
+.main {
+  padding: 114px 16px 64px 16px;
+  min-height: 100vh;
+}
+
+.mainLight {
+  background-color: var(--very-light-gray-lm);
+}
+
+.mainDark {
+  background-color: var(--very-dark-blue-dm);
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.container > button {
+  display: flex;
+  align-items: center;
+  padding: 6px 16px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.containerLight > button {
+  background-color: var(--white);
+  color: var(--very-dark-blue-lm);
+}
+
+.containerDark > button {
+  background-color: var(--dark-blue-dm);
+  color: var(--white);
+}
+
+.containerDark > button > svg > path {
+  stroke: var(--white);
+}
+
+.container > button > span {
+  margin-left: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.content {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.infosLight {
+  color: var(--very-dark-blue-lm);
+}
+
+.infosDark {
+  color: var(--white);
+}
+
+.infos > h2 {
+  margin-bottom: 24px;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.column > span {
+  display: block;
+}
+
+.borders {
+  margin-top: 32px;
+}
+
+.borders > strong {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.light {
+  color: var(--very-dark-blue-lm);
+}
+
+.dark {
+  color: var(--white);
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.list > button {
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.listLight > button {
+  background-color: var(--white);
+  color: var(--very-dark-blue-lm);
+}
+
+.listDark > button {
+  background-color: var(--dark-blue-dm);
+  color: var(--white);
+}
+
+.loader {
+  border: 8px solid rgba(0, 0, 0, 0.2);
+  border-top: 8px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  animation: loader 1s linear infinite;
+  margin: 64px auto;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 720px){
+  .content {
+    margin-top: 64px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 92px;
+  }
+  .content > img {
+    max-width: 40vw;
+  }
+}
