@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Click Here](https://github.com/manueldinisjunior/REST-API-Countries)
-- Live Site URL: [Click Here](https://manueldinisjunior.github.io/REST-API-Countries/)
+- Live Site URL: [Click Here](https://rest-api-countries-n.netlify.app/)
 
 ## My process
 
