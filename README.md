@@ -4,13 +4,13 @@ This is a solution to the [REST Countries API with color theme switcher](https:/
 
 ## Index
 
-- [Overview](#overview)
-- [The challenge](#the-challenge)
-- [Screenshot](#screenshot)
-- [Links](#links)
-- [My process](#my-process)
-- [Built with](#built-with)
-- [Author](#author)
+ [Overview](#overview)
+ [The challenge](#the-challenge)
+ [Screenshot](#screenshot)
+ [Links](#links)
+ [My process](#my-process)
+ [Built with](#built-with)
+ [Author](#author)
 
 ## Overview
 
@@ -26,8 +26,6 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 - Bonus: Toggle the color scheme between light and dark mode
-
-![Countries](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mozambique_in_the_world_%28W3%29.svg/1280px-Mozambique_in_the_world_%28W3%29.svg.png?20110504134824)
 
 ### Links
 
